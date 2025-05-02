@@ -50,15 +50,10 @@ flex-direction: column;
     border: 1px solid #808080;
     }
 
-
-
-
 .label-text {
   margin-bottom: 8px;
   margin-top: 8px;
 }
-
-
 
 .feedback-form input:hover,
 .feedback-form textarea:hover {
@@ -66,9 +61,10 @@ flex-direction: column;
         border-radius: 4px;
 }
 
-.feedback-form input:focus,
-.feedback-form textarea:focus {
+.feedback-form input.active,
+.feedback-form textarea.active {
     border: 1px solid #808080;
+    border-radius: 4px;
 }
 
 .feedback-form button {

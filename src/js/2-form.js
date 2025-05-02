@@ -35,3 +35,14 @@ form.addEventListener('submit', event => {
   formData = { email: '', message: '' };
   form.reset();
 });
+
+const inputs = document.querySelectorAll('.feedback-form input, .feedback-form textarea');
+
+inputs.forEach(input => {
+  input.addEventListener('focus', () => {
+    input.classList.add('active');
+  });
+  input.addEventListener('blur', () => {
+    input.classList.remove('active');
+  });
+});
