@@ -14,15 +14,21 @@
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Form </h1>
         <form class="feedback-form" autocomplete="off">
+          <div class="form-field">  
           <label class="label">
-            Email
-            <input class="label-input" type="email" name="email" autofocus />
+            <span class="label-text">Email</span>
+            <input type="email" name="email" autofocus />
           </label>
+          </div>
+          <div class="form-field">
           <label class="label">
-            Message
-            <textarea class="label-text" name="message" rows="8"></textarea>
+            <span class="label-text">Message</span>
+            <textarea  name="message" rows="8"></textarea>
           </label>
-          <button type="submit">Submit</button>
+          </div>
+          <div class="btn-container">
+          <button class="btn" type="submit">Submit</button>
+          </div>
         </form>
 
       </div>
